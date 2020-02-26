@@ -7,12 +7,18 @@ class User
   end
 
   def introduce
+    text = ""
     if adult?
-      "はじめまして、私の名前は{@name}です"
+text = "はじめまして、私の名前は{@name}です\n\n"
     else
-      "僕は#{@name}だよ!!"
+text = "僕は#{@name}だよ!!\n\n"
     end
-  end
+
+text += "自己紹介終わり\n"
+text += "--------------"
+
+text
+end
 
   private
 
