@@ -24,6 +24,12 @@ class User
       よろしくね！！
       EOS
     end
+
+
+
+    text += "------------------"
+
+    text
   end
 
   private
@@ -41,7 +47,7 @@ def build_users(params)
   users
   end
 
-  params = [{name: "saitou", age: 22}, {name: "taira", age: 12}, {name: "yamada", age: 99}]
+  params = [{name: "saitou", age: 22}, {name: "taira", age: 12}, {name: "yamada", age: 99}, {name: "auzuki", age: 49}]
 
   users = build_users(params)
 
