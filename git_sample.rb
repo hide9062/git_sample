@@ -7,24 +7,30 @@ class User
   end
 
   def introduce
+    text = ""
+    
     if adult?
-      <<~EOS
-      "はじめまして、私の名前は{@name}です"
+text =  <<~EOS
+はじめまして、私の名前は{@name}です
 
     #{@age}歳です
 
     よろしくお願いします
     EOS
   else
-    <<~EOS
-      "僕は#{@name}だよ!!"
+    text = <<~EOS
+    僕は#{@name}だよ!!"
 
       #{@age}歳だよ
 
       よろしくね！！
       EOS
     end
-  end
+
+text += "--------------"
+
+text
+end
 
   private
 
