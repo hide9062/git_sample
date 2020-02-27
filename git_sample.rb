@@ -8,35 +8,23 @@ class User
 
   def introduce
     text = ""
-    
-    if adult?
-text =  <<~EOS
-はじめまして、私の名前は{@name}です
+        if adult?
+text = "はじめまして、私の名前は{@name}です\n\n"
+else
+  text = "僕は#{@name}だよ!!!\n\n"
+end
 
-    #{@age}歳です
-
-    よろしくお願いします
-    EOS
-  else
-    text = <<~EOS
-    僕は#{@name}だよ!!"
-
-      #{@age}歳だよ
-
-      よろしくね！！
-      EOS
-    end
-
-text += "--------------"
+text += "以上です"
+text += "------"
 
 text
 end
 
-  private
+private
 
-  def adult?
-    @age >= 20
-  end
+def adult?
+  @age >= 20
+end
 end
 
 def build_users(params)
