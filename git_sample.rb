@@ -48,7 +48,7 @@ def build_users(params)
   users
   end
 
-  params = [{name: "saitou", age: 22}, {name: "taira", age: 12}, {name: "yamada", age: 99}]
+  params = [{name: "saitou", age: 22}, {name: "taira", age: 12}, {name: "yamada", age: 99}, {name: "takahasi", age: 54}]
 
   users = build_users(params)
 
