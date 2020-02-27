@@ -22,11 +22,10 @@ else
 
 #{@age}歳だよ
 
+
 よろしくね!!
 EOS
 end
-
-
 
 text += "------"
 
@@ -48,7 +47,7 @@ def build_users(params)
   users
   end
 
-  params = [{name: "saitou", age: 22}, {name: "taira", age: 12}, {name: "yamada", age: 99}]
+  params = [{name: "saitou", age: 22}, {name: "taira", age: 12}, {name: "yamada", age: 99}, {name: "suzuki", age: 49}]
 
   users = build_users(params)
 
